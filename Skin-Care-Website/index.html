@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skin-care-product-webpage.</title>
+</head>
+<style>
+   
+
+    .A1 {
+        background-color: antiquewhite;
+        margin-top: 0px;
+        margin: 0 20% ;
+        padding: 20px;
+        font-size: larger;
+    }
+    .A2{
+       
+        margin-top: 0px;
+        margin: 0 20% ;
+        padding: 20px;
+        font-size: larger;
+    }
+    .b{
+       font-size: 30px; 
+    }
+
+
+   
+</style>
+
+<body>
+    <section class="A1">
+
+        <h1>Skin-Care-Website...</h1>
+        <hr>
+        <div>
+            <dl>
+                <dt class="A">
+                    <p class="b"><a href="vally99/zipacre/index.html">Open the site</a></p>
+                </dt>
+                <dt class="A">
+                    <p>Folder Download </p>
+                    <input type="password" id="passwordInput" placeholder="Enter Password">
+                    <button onclick="checkPassword()">Submit</button>
+                </dt>
+            </dl>   
+        </div>
+
+    </section>
+    <section class="A2">
+                    <p id="result"></p>
+                    <p id="result1"></p>
+     </section>
+</body>
+
+</html>
+
+
+
+<!-- New folder (2).zip -->
+
+<script>
+    function checkPassword() {
+        const correctPassword = "Hi Susheel, what's the password for the folder?";
+        const Password = "Glowing";
+        const inputPassword = document.getElementById("passwordInput").value;
+
+        if (inputPassword === correctPassword) {
+            document.getElementById("result").innerText = "✅ Password correct....";
+            // Redirect to Google after 10 second
+            setTimeout(function () {
+                window.location.href = "Skin-Care-Website.zip";
+            }, 10000);
+            document.getElementById("result1").innerText = "⏳ Please wait 10 seconds...";
+
+
+        } if (inputPassword === Password) {
+            document.getElementById("result").innerText = "✅ Password correct....";
+            // Redirect to Google after 10 second
+            setTimeout(function () {
+                window.location.href = "Skin-Care-Website.zip";
+            }, 10000);
+            document.getElementById("result1").innerText = "⏳ Please wait 10 seconds...";
+
+
+        } else {
+            document.getElementById("result").innerText = "❌ Incorrect password. Try again...";
+
+            // Show a clickable "Call" link
+            document.getElementById("result1").innerHTML = `
+        <a href="https://wa.me/919122704118?text=Hi Susheel, what's the password for the folder?" target="_blank" style="color: green; text-decoration: underline;">
+          📞 Message on WhatsApp
+        </a>
+      `;
+        }
+    }
+</script>
